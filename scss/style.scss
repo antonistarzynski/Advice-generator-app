@@ -1,0 +1,122 @@
+//primary
+
+$light-cyan: hsl(193, 38%, 86%);
+$neon-green: hsl(150, 100%, 66%);
+
+//neutral
+
+$grayish-blue: hsl(217, 19%, 38%);
+$dark-grayish-blue: hsl(217, 19%, 24%);
+$dark-blue: hsl(218, 23%, 16%);
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-size: 24px;
+    font-family: 'Manrope', sans-serif;
+    font-weight: 800;
+}
+
+
+body {
+    background-color: $dark-blue;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    section {
+        width: 343px;
+        background-color: #313A48;
+        box-shadow: 30px 50px 80px rgba(0, 0, 0, 0.100202);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 1.66em 1em;
+        border-radius: 10px;
+
+        header {
+            font-size: 11px;
+            letter-spacing: 3.46px;
+            color: $neon-green;
+            text-transform: uppercase;
+            margin-bottom: 1em;
+
+            .advice-id {
+                font-size: 11px;
+                letter-spacing: 3.46px;
+                color: $neon-green;
+                text-transform: uppercase;
+            }
+        }
+
+        article {
+            color: $light-cyan;
+            letter-spacing: -0.26px;
+            line-height: 1.25em;
+            font-size: 24px;
+            margin-bottom: 1em;
+        }
+
+        figure {
+            background: url(../images/pattern-divider-mobile.svg);
+            background-position: center;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 1em;
+        }
+
+    }
+
+    button {
+        background-color: $neon-green;
+        border: none;
+        width: 2.25em;
+        height: 2.25em;
+        border-radius: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -1em;
+    }
+
+    button:hover {
+        box-shadow: 0px 0px 40px #53FFAA;
+        cursor: pointer;
+    }
+}
+
+
+@media screen and (min-width: 680px) {
+    body {
+        section {
+            width: 22.5em;
+            padding: 2em;
+
+            header {
+                font-size: 13px;
+
+                .advice-id {
+                    font-size: 13px;
+                }
+            }
+
+            article {
+                font-size: 28px;
+                margin-bottom: .5em;
+            }
+
+            figure {
+                background: url(../images/pattern-divider-desktop.svg);
+                background-position: center;
+                background-repeat: no-repeat;
+                margin: .25em 0;
+            }
+        }
+    }
+}
