@@ -12,7 +12,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [click here](https://your-live-site-url.com)
+- Live Site URL: [click here](https://antonistarzynski.github.io/Advice-generator-app/)
 
 ### Built with
 
